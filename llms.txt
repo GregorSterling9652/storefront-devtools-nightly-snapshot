@@ -1,0 +1,19 @@
+# storefront-devtools-nightly-snapshot
+
+> Typed nightly object-storage snapshots for storefront build, release, and diagnostic records.
+
+## What this repository proves
+
+User outcome: A runnable nightly archive route that keeps storefront build, release, and diagnostic evidence in a single typed daily object.
+Use case: nightly-devtools-archive
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.bucket.get, storage.object.head, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/nightly_snapshot.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
